@@ -30,7 +30,6 @@ const numberToRoman = (num) => {
         num -= array[1];
         }
     };
-
     pairArr.forEach(functionName);
     return result;
 };
@@ -52,6 +51,7 @@ const numberInput = () => {
         output.innerText = `Please enter a valid number`;
         return;
     }
+    output.innerText = numberToRoman(numberInt);
 };
 
 convertBtn.addEventListener("click", numberInput);
